@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" /> 
+        <meta name="author" content="Matteo Scannavini" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Tamponi impossibili</title>
+        <script language="javascript" type="text/javascript" src="jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="script.js">
+        </script>
+    </head>
+<body>
+    <div class="app-container">
+        <div class="background" id="bg2">
+        </div>
+        <div class="text">
+            <h2>Tamponi impossibili</h2>
+            <blockquote>
+                <p>
+                    Il problema che si è manifestato in maniera prepotente nella gestione della pandemia è stato il fatto di
+                    lasciare in secondo piano molte categorie di persone. Moltissime procedure
+                    messe in piedi per la gestione dell’emergenza sanitaria non hanno tenuto conto dell’esistenza di Stp e
+                    <span class="note">tesserini Eni<sup>2</sup></span> e altri tipi di permesso di soggiorno. E la mancanza di
+                    considerazione di questi due titoli di accesso al sistema sanitario nazionale ha reso quasi impossibile per
+                    i titolari l’accesso alla diagnosi, quindi ai tamponi e alla vaccinazione”.
+                    <cite> 
+                        <b>Cecilia Fazioli</b>, direzione sanitaria dell’Istituto nazionale per la promozione della salute delle 
+                        popolazioni migranti e per il contrasto delle malattie della povertà (Inmp) e medico del poliambulatorio 
+                        dell’Istituto a Roma.
+                    </cite>
+                </p>
+                <div class="modal">
+                    <div class="modal-content">
+                        <div class="close">&times;</div>
+                        <p>
+                        <span class="nero">Il codice Eni </span>(Europeo Non Iscritto) è lo strumento con cui le Regioni
+                        possono garantire l'applicazione del diritto alla salute per i cittadini dell'Unione europea irregolarmente 
+                        presenti sul territorio, privi di requisiti per l'iscrizione al Ssn e non aventi diritto all’assistenza da parte 
+                        del paese di provenienza (tessera europea assicurazione malattia TEAM o Formulario comunitario).
+                        </p>
+                        <p>
+                        Le prestazioni erogabili sono: cure ambulatoriali e ospedaliere urgenti ed essenziali, interventi di
+                        medicina preventiva e riabilitativa. Il codice Eni è valido sul territorio della Regione dove è stato
+                        emesso per 6 mesi ed è rinnovabile in caso di permanenza sul territorio nazionale e sussistenza dei
+                        requisiti per il rilascio.
+                        </p>
+                    </div>
+                </div>
+            </blockquote>
+            <p>
+                Per accedere ai tamponi, per esempio, occorreva la ricetta dematerializzata: “Questo - prosegue Fazioli - ha
+                creato molti problemi ai titolari di Stp ed Eni perché per i primi funziona solo a volte e con difficoltà,
+                ovvero la ricetta non arriva, e nel secondo caso non è proprio possibile emettere la ricetta
+                dematerializzata in quanto i codici Eni sono validi solo a livello regionale e il sistema di gestione non
+                li accetta. E un conto è chiamare il medico di famiglia per farsi prescrivere il tampone, un altro conto è
+                dover contattare gli ambulatori che solitamente sono aperti per queste categorie di persone quando c’è la
+                pandemia in atto: non si poteva uscire di casa, gli ambulatori hanno iniziato a ricevere solo su
+                prenotazione, a restringere gli orari, in alcuni casi hanno chiuso. </p>
+            <p> Se già prima della pandemia avere
+                un’impegnativa era complicato, nel 2020 il problema è emerso in maniera plateale in quanto non esistono
+                procedure
+                standardizzate che garantiscano l’accesso alle cure a queste persone.<span class="nero">Per i titolari di Eni e Stp si sono
+                dunque moltiplicate le difficoltà di entrare in contatto e comunicare con il Sistema sanitario nazionale.
+                Di fatto sono diventati invisibili al sistema di gestione e dunque al Sistema sanitario nazionale”.</span> </p>
+            <p class="evidence">
+                Una soluzione possibile? “Standardizzare i percorsi per chi ha diritto ad accedere al Servizio sanitario
+                nazionale”.
+            </p>
+            <blockquote>
+                <p>
+                    Durante la pandemia sarebbe stato utile ricordarsi dell’esistenza di queste persone”
+                    <cite><b>Cecilia Fazioli</b>, (Inmp).</cite>
+                </p>
+            </blockquote>
+            <p>
+                <span class="evidence">Ma chi sono queste persone in parte dimenticate?</span>
+            </p>
+            <p>
+                Per quanto riguarda l’Emilia Romagna parliamo di circa
+                <span class="nero">3.200</span> codici rilasciati ogni anno per accedere al Sistema sanitario nazionale: il
+                tesserino vale 6 mesi,dunque non vi è un’esatta corrispondenza tra tesserini e persone (un soggetto può attivare più di 
+                un codice negli anni). La maggior parte dei tesserini Stp sono stati attivati da persone che provengono da stati
+                europei extra Ue (47%) e dall’Africa (33%). La Cina è all’undicesimo posto come stato di origine, <span class="nero">al 
+                primo posto c’è l’Albania.</span>
+            </p>
+            <p>
+                In Lazio la popolazione degli Stp è più ampia: a fine 2018 e a fine 2019 i tesserini Stp attivi erano
+                rispettivamente<span class="nero"> 4.515 e 5.133 </span>(attivati 8.601 e 8.342: non c’è corrispondenza
+                perché il codice vale 6 mesi e
+                non viene automaticamente rinnovato). Nel 2020, nonostante la pandemia (o forse proprio per la pandemia)
+                alla fine dell’anno erano <span class="nero">12.818</span> i codici attivi contro i 10.386 attivati durante
+                l’anno. La differenza sono
+                presumibilmente i codici attivati a fine 2019 che scadevano nel corso del 2020 e sono stati prorogati.
+            </p>
+        </div>
+        <div class="slider">
+            <input type="radio" name="filter2" class="L" checked="checked"/><label for="Lazio" style="font-weight: bold">Lazio&ensp;&ensp;</label>
+            <input type="radio" name="filter2" class="E-R"/><label for="Emilia-Romagna">Emilia-Romagna</label>
+        </div>
+        <div class="viz" id="origin">
+            <h4>Popolazione Stp per provenienza</h4>
+            <img class="Lviz" src="svg/treemap lazio.svg"/>
+            <img class="E-Rviz" src="svg/treemap emilia.svg" />
+        </div>
+        <div class="text">
+            <p>
+            Per quanto riguarda gli asiatici e gli africani, i titolari di Stp rilasciati dall’Emilia sono <span class="nero">
+            soprattutto uomini</span> (61 e 73% rispettivamente), mentre tra coloro che provengono dal continente europeo e dalle
+            Americhensi contano più <span class="nero">donne </span>(66% Europa, 60% America Latina, 65% America del Nord). Se
+            guardiamo al Lazio, invece, tra i tesserini rilasciati a cittadini africani quattro su cinque sono intestati a donne e 
+            una preponderanza femminile si riscontra anche guardando ai tesserini attribuiti a persone provenienti da un paese dell’Asia
+            (3 su 4). Per quanto riguarda infine i codici rilasciati a cittadini di stati europei extra Ue e
+            dell’America Latina le differenze di genere sono meno marcate, con una leggera prevalenza maschile (55%).
+            </p>
+        </div>
+        <div id="genre" class="viz">
+            <h4>Popolazione Stp per genere</h4>
+            <img src="svg/genere.svg" />
+        </div>
+        <div class="text">
+            <p>
+            Analizzando invece la distribuzione per età, per quanto riguarda i tesserini rilasciati in Emilia, nel caso
+            di intestatari africani <span class="nero">7 su 10 sono tra i 20 e i 49 anni </span>(quasi 3 su 10 nella
+            fascia 30-39). E se
+            fino
+            ai 29 anni i codici rilasciati a ragazzi e ragazze si equivalgono in numero, la prevalenza dei soggetti di
+            genere maschile cresce al crescere dell’età: 60,43% tra i 30 e i 39 anni, 79,71% tra i 40 e i 49. La maggior
+            parte degli stranieri che provengono da un altro paese europeo destinatari di Stp in Emilia sono originari
+            di Albania, Ucraina, Moldova e Georgia: tra di loro la fascia d'età maggiormente rappresentata è quella
+            <span class="nero">fino a 19 anni </span>(34,32%), con una preponderanza di soggetti di genere maschile (67%) tra i 10 e i
+            19 anni. Sempre tra gli "europei emiliani" si riscontra una presenza di persone di mezza età (tra i 50 e i 59 e tra i 60 e i
+            69) superiore rispetto alle altre popolazioni considerate (per Africa e America Latina la percentuale si
+            assesta intorno al 3% circa contro il 13 e 8% dell’Europa). Per quanto riguarda i codici Stp destinati alla
+            popolazione originaria dell’Asia, infine, un quarto risultano assegnati a <span class="nero">ragazzi e ragazze tra i 
+            10 e i 19 anni.</span>
+            </p>
+            <p>
+            <span class="evidence">L’età media dei titolari di Stp in Lazio è invece più bassa rispetto all’Emilia Romagna 
+            (20-39 anni).</span><br/> La maggior parte degli Stp sono stati rilasciati a cittadini di stati europei, principalmente 
+            extra Ue (ma non solo) come l’Albania, che è al primo posto come paese d’origine dei titolari di codice. Quasi un terzo degli
+            utenti hanno cittadinanza in uno stato del continente europeo, altrettanti in uno stato africano. In
+            generale la fascia di età <span class="nero">30-39 anni</span> è la più rappresentata (31% tra gli Stp
+            rilasciati ad asiatici, tra il
+            26 e il 29% per gli americani mentre in Africa il picco si registra nella fascia 20-29 anni che rappresenta
+            il 37% del totale dei tesserini rilasciati).
+            </p>
+        </div>
+        <div class="slider">
+            <input type="radio" name="filter3" class="L" checked="checked"/><label for="Lazio" style="font-weight: bold">Lazio&ensp;&ensp;</label>
+            <input type="radio" name="filter3" class="E-R"/><label for="Emilia-Romagna">Emilia-Romagna</label>
+        </div>
+        <div id="age" class="viz">
+            <h4>Popolazione Stp per età</h4>
+            <img class="Lviz" src="svg/età lazio.svg"/>
+            <img class="E-Rviz" src="svg/età emilia.svg" />
+        </div>
+        <div class="text">
+            <p>
+                <span class="evidence">L’accesso a tamponi, visite e prescrizioni di farmaci non sono le uniche difficoltà 
+                riscontrate durante questa pandemia dai tanti soggetti "invisibili".</span>
+            </p>
+            <p>
+                Secondo uno studio dell’Istituto superiore di Sanità pubblicato sullo European Journal of Public Health a febbraio
+                2021, per esempio, <span class="nero">i casi di Covid in cittadini non italiani sono stati diagnosticati circa due 
+                settimane dopo rispetto ai casi italiani</span>, e fino a quattro settimane dopo nel caso di migranti provenienti da paesi
+                con un basso <i>Human development index</i>. In definitiva, gli stranieri (non si distuingue tra con e senza documenti)
+                hanno ricevuto una diagnosi quando la malattia era più avanzata e i sintomi più gravi. In generale, è stato
+                osservato un gradiente inverso in base al quale il rischio di ospedalizzazione, ricovero in terapia
+                intensiva e morte aumentava al diminuire dell'Hdi del paese di origine.
+            </p>
+            <blockquote>
+                <p>
+                Una diagnosi ritardata nei pazienti stranieri potrebbe spiegare la loro maggiore probabilità di presentare
+                condizioni cliniche che richiedono ricovero, sia ordinario che in terapia intensiva, nonché la maggiore
+                probabilità di morte osservata in quelli provenienti da paesi a basso Hdi”.
+                <cite>
+                    <b>Iss</b>
+                </cite>
+            </blockquote>
+            <p>
+                Lo studio ipotizza che, tra le cause di questa diseguaglianza, ci sia il fatto che <span class="nero">
+                “l'assegnazione a un medico di base</span> (il più probabile mediatore per la diagnosi precoce) 
+                <span class="nero">avviene solo in presenza di uno status documentato”.</span> E poi barriere linguistiche, 
+                amministrative, legali, culturali e sociali, il timore di perdere il lavoro o di dover restare assenti dal lavoro 
+                per isolamento/quarantena.
+            </p>
+            <p>
+                Il sondaggio dell’<a href="https://www.who.int/publications/i/item/9789240017924">Organizzazione mondiale
+                della sanità</a>, che ha coinvolto oltre 30mila rifugiati e migranti nel mondo (e quasi 7mila in Europa)
+                aggiunge una tessera al puzzle e conferma quanto osservato dall’Iss: i principali motivi per i quali i
+                migranti non hanno cercato assistenza medica in caso di sintomi sono legati al <span class="nero">costo delle cure, 
+                alla paura di essere espulsi, alla mancanza di assistenza sanitaria o al fatto di non averne diritto. </span>E il
+                16,3% degli intervistati senza documenti in Europa non richiede cure mediche per i sintomi del Covid-19, percentuali che
+                si abbassano al 3,8% tra i migranti con permesso di soggiorno permanente. In mezzo ci sono gli stranieri con permessi
+                temporanei e, sorprendentemente, quelli con cittadinanza (il 7% degli intervistati in Europa).
+            </p>
+            <p>
+                Risulta infine che la maggior parte dei rifugiati e dei migranti intervistati abbiano preso precauzioni per
+                evitare l'infezione. Quando non l'hanno fatto, spiegano, è stato
+                <span class="nero">perché non potevano</span>: per esempio,
+                degli
+                intervistati in Europa, una piccola parte (77 persone) ha risposto che non era in grado di lavarsi le mani,
+                poco più di 250 hanno detto che per loro è stato impossibile mantenere il distanziamento, per oltre 330 è
+                stato impossibile coprire naso e bocca con adeguati dispositivi di protezione. Ma è sulla possibilità di
+                evitare i mezzi pubblici e di uscire di casa che ci sono state le più grandi difficoltà per almeno un
+                intervistato su 10.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
