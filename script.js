@@ -53,7 +53,7 @@ $(document).ready(function(){
     }
     //footer dynamic generation
     let footer = $(`
-        <footer>
+        <footer id="about">
             <p><b>A cura di</b><br/>
             Anna Ghezzi<br/> Alessandro Lodovini<br/> Benedetta Tonnini<br/> Matteo Scannavini</p>
             <p>
@@ -148,11 +148,12 @@ $(document).ready(function(){
 })
 var index = [
     {title: 'Home', ref: "index.html"},
-    {title: 'Curarsi senza documenti', ref: "section1.html"}, 
-    {title: 'Tamponi impossibili', ref: "section2.html"}, 
-    {title: 'Salute universale ma...', ref: "section3.html"},
+    {title: 'Salute universale, ma...', ref: "section1.html"},
+    {title: 'Curarsi senza documenti', ref: "section2.html"}, 
+    {title: 'Tamponi impossibili', ref: "section3.html"}, 
     {title: 'E adesso? La questione vaccini', ref: "section4.html"}, 
-    {title: 'Il popolo degli Stp', ref: "section5.html"}
+    {title: 'Il popolo degli Stp', ref: "section5.html"},
+    {title: 'About', ref: "#about"}
 ];
 var onHome = true;/*
 window.onscroll = function() {scrollProgress()};
