@@ -79,6 +79,7 @@
   footer li {
     font-size: 0.8em;
   }
+  
 
 }
 @media screen and (min-width: 1024px) {
@@ -149,7 +150,7 @@ html{
 }
 
 body{
-  font-family: SuisseIntl,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+  font-family: Helvetica,Arial,sans-serif;
   background-color: #d8efef;
   color: #3a3a3a;
 }
@@ -360,7 +361,7 @@ p a {
   line-height: 1.7em;
  /* background: #fff;*/
 }
-span.nero {
+span.strong {
   font-weight: 600;
 }
 .rosso {
@@ -428,8 +429,6 @@ cite::before{
 	max-height: 100%;
 	max-width: 100%;
 }
-
-
 .image-box{
   margin: 2rem 0;
   text-align: center;
@@ -489,7 +488,6 @@ sup{
   text-decoration: underline;
   font-size: 0.5rem;
 }
-
 
 .modal{
   display: none;
