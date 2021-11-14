@@ -151,7 +151,7 @@ var index = [
     {title: 'Salute universale, ma...', ref: "section1.html"},
     {title: 'Curarsi senza documenti', ref: "section2.html"}, 
     {title: 'Tamponi impossibili', ref: "section3.html"}, 
-    {title: 'E adesso? La questione vaccini', ref: "section4.html"}, 
+    {title: 'La questione vaccini', ref: "section4.html"}, 
     {title: 'Il popolo degli Stp', ref: "section5.html"},
     {title: 'About', ref: "#about"}
 ];
