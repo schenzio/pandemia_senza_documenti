@@ -1,4 +1,13 @@
 $(document).ready(function(){
+    var index = [
+        {title: 'Home', ref: "index.html"},
+        {title: 'Salute universale, ma...', ref: "section1.html"},
+        {title: 'Curarsi senza documenti', ref: "section2.html"}, 
+        {title: 'Tamponi impossibili', ref: "section3.html"}, 
+        {title: 'La questione vaccini', ref: "section4.html"}, 
+        {title: 'Il popolo degli Stp', ref: "section5.html"},
+        {title: 'About', ref: "#about"}
+    ]
     //menu dynamic generation
     $(".app-container").prepend($("<nav></nav>"));
     for (let i = 0; i < index.length; i++) {
@@ -62,20 +71,11 @@ $(document).ready(function(){
             collaborazione.
             </p>
             <p><b>foto:</b> La Provincia Pavese, Medici Senza Frontiere </p>
-            <p><b>contatti:</b> matteo.scanna1999@gmail.com</p>
+            <p><b>contatti:</b> matteo.scanna1999@gmail.com, benedetta.tonnini@outlook.it</p>
         </footer>
     `);
     $(".app-container").append(footer);
-
-
-
-    $(".intro").mouseover(function(){
-        $("img").attr("class", "color");
-    })
-    $(".intro").mouseout(function(){
-        $("img").attr("class", "gray");
-    })
-
+    //slider view
     $('#up, .E-Rviz').hide();
     $('circle').css({'fill': 'transparent'});
     $(".L").attr('checked', 'true');
@@ -103,65 +103,11 @@ $(document).ready(function(){
         }
     }
     })
-
     $(document).on("scroll", function() {
         let pxScrolled = $(document).scrollTop();
         let docHeight = $(document).height()-$(window).height();
         let scrolled = (pxScrolled / docHeight) * 100;
         $("#myBar").css("width", scrolled + "%");
         
-    var homeH = ($("#home").height())+($("nav").height());//se uso questa riga ora devo togliere nav
-    var s0 = homeH +($("#section0").height());
-    var s1 = s0 +($("#section1").height());
-    var s2 = s1 +($("#section2").height());
-    if(pxScrolled > homeH){
-        onHome = false;
-        $('#up').show();
-        $('#s0').css({fill: '#d8efef'});
-    
-        if(pxScrolled <= s0){
-        $(".logoBack").css({fill: '#d7232a'});
-        $('#s1').css({fill: 'transparent'});
-        $('#s0').css({fill: '#eb836a'});
-        }
-        else if (pxScrolled>s0 && pxScrolled<= s1) {
-        $(".logoBack").css({fill: '#d7232a'});
-        $('#s1').css({fill: '#eb836a'});
-        }
-        else if (pxScrolled>s1 && pxScrolled<= s2) {
-        $(".logoBack").css({fill: '#d7232a'});
-        $('#s1').css({fill: 'transparent'});
-        $('#s2').css({fill: '#eb836a'});
-        } 
-        else if (pxScrolled>s2) {
-        $(".logoBack").css({fill: '#d7232a'});
-        $('#s1').css({fill: 'transparent'});
-        $('#s3').css({fill: '#eb836a'});
-        }   
-    } else {
-        onHome=true;
-        $('#up').hide();
-        $(".logoBack").css({fill: '#d7232a'});
-        $('#s1').css({fill: 'transparent'});
-    }; 
     })
 })
-var index = [
-    {title: 'Home', ref: "index.html"},
-    {title: 'Salute universale, ma...', ref: "section1.html"},
-    {title: 'Curarsi senza documenti', ref: "section2.html"}, 
-    {title: 'Tamponi impossibili', ref: "section3.html"}, 
-    {title: 'La questione vaccini', ref: "section4.html"}, 
-    {title: 'Il popolo degli Stp', ref: "section5.html"},
-    {title: 'About', ref: "#about"}
-];
-var onHome = true;/*
-window.onscroll = function() {scrollProgress()};
-
-function scrollProgress() {
-  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-  var scrolled = (winScroll / height) * 100;
-  document.getElementById("myBar").style.width = scrolled + "%";
-}*/
-    
