@@ -13,11 +13,11 @@ $(document).ready(function(){
     for (let i = 0; i < index.length; i++) {
     let navChap = $("<a class='navPoint' href='"+index[i].ref+"'>"+index[i].title+"</a>");
     navChap.mouseover(function(){
-        $(this).css({backgroundColor: "#eb836a", fontWeight: "bold"})
+        $(this).css({backgroundColor: "#eb836a"})
         $(this).animate({marginLeft: "-25%"}, 200);
     });
     navChap.mouseout(function(){
-        $(this).css({backgroundColor: "#d7232a",  fontWeight: "normal"});
+        $(this).css({backgroundColor: "#d7232a"});
         $(this).animate({marginLeft: "5%"}, 200);
     });
     $("nav").append(navChap);
@@ -63,12 +63,13 @@ $(document).ready(function(){
     //footer dynamic generation
     let footer = $(`
         <footer id="about">
-            <p><b>A cura di</b><br/>
+            <p><b>Sito realizzato da Matteo Scannavini</b><br/>
+            <p><b>Progetto a cura di</b><br/>
             Anna Ghezzi<br/> Alessandro Lodovini<br/> Benedetta Tonnini<br/> Matteo Scannavini</p>
             <p>
-            Un ringraziamento speciale agli intervistati <b>Alessandro Mumolo</b>, <b>Cecilia Fazioli</b>, <b>Natalia Ciccarello</b>,
-            a <b>Dataninja</b>, che ci ha permesso di lavorare a questo Project Work, e a <b>Medici Senza Frontiere</b>, per la 
-            collaborazione.
+            Un ringraziamento speciale agli intervistati <b>Alessandro Mumolo</b>, <b>Cecilia Fazioli</b>, <b>Natalia Ciccarello</b> e 
+            <b>Andrea Carrozzini</b>, a <b>Dataninja</b>, che ci ha permesso di lavorare a questo Project Work, e a <b>Medici Senza 
+            Frontiere</b>, per la collaborazione.
             </p>
             <p><b>foto:</b> La Provincia Pavese, Medici Senza Frontiere </p>
             <p><b>contatti:</b> matteo.scanna1999@gmail.com, benedetta.tonnini@outlook.it</p>

@@ -1,7 +1,7 @@
 @media screen and (min-width: 280px) {
   .background{
     height: 50vh;
-  }
+  }      
   #title h1{
     font-size: 2.1em;
   }
@@ -88,7 +88,10 @@
     font-size: 1.5rem;
   }
   .navPoint {
-    font-size: 1.5em;
+    font-size: 1.3em;
+  }
+  nav {
+    width: 25%;
   }
   footer p {
     font-size: 1.2em;
